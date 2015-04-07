@@ -27,7 +27,7 @@ $white:             #fff;
 
 $light-gray:        #f8f9fa;
 $gray:              #eaedf2;
-$text-color:        #5c6b80;
+$text-color:        #fff;
 $meta-gray:         #9fa6b4;
 
 $tan:               #eceee5;
@@ -37,12 +37,24 @@ $green:             #7dd667;
 $bones-pink:        #f01d4f;
 $blue:              #2980b9;
 
-$link-color:        $bones-pink;
+$link-color:        #fff;
 $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
 
+$gf-darker-purple:	#503060;
+$gf-dark-purple:	#6A4080;
+$gf-semilight-purple:	#925FA1;
+
+/*********************
+FUNCTIONNAL COLORS
+*********************/
+
+/* Base */
+$page-background-color:	$gf-dark-purple;
+
+$fond-content:		$gf-semilight-purple;
 
 /*
 Here's a great tutorial on how to
