@@ -1,6 +1,9 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
+                    
+                    <a href="http://www.chateau-selles-sur-cher.com/"><img src="<?php echo get_template_directory_uri(); ?>/library/images/footer-chateau.png" alt="Château de Selles-sur-Cher"></a>
+					<a href="http://www.mutinerie.org/"><img src="<?php echo get_template_directory_uri(); ?>/library/images/footer-mutinerie.png" alt="Espace de coworking Mutinerie"></a>
 
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
