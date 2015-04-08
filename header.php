@@ -25,9 +25,10 @@
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
 		<?php // or, set /favicon.ico for IE10 win ?>
-		<meta name="msapplication-TileColor" content="#f01d4f">
-		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-            <meta name="theme-color" content="#121212">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/favicon-144.png">
+        <meta name="application-name" content="Geek Faëries">
+        <meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -54,6 +55,13 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
+                    <ul class="soc">
+						<li style="width: 89%; text-align: left;"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGeekFaeries&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=dark&amp;action=like&amp;height=35" style="border:none; overflow:hidden; width:450px; height:25px;padding-top: 6px;"></iframe></li>
+    <li><a class="soc-twitter" href="https://twitter.com/GeekFaeries"></a></li>
+    <li><a class="soc-facebook" href="https://www.facebook.com/GeekFaeries"></a></li>
+    <li><a class="soc-youtube" href="https://www.youtube.com/user/StudioAffects"></a></li>
+    <li><a class="soc-google soc-icon-last" href="https://plus.google.com/u/0/+GeekFaeriesFr"></a></li>
+                    </ul>
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
@@ -75,3 +83,11 @@
 				</div>
 
 			</header>
+            <div id="banniere-cont">
+				<a href="<?php bloginfo('url'); ?>/"><img id="banniere-logo" src="<?php echo get_template_directory_uri();?>/library/images/2015_logo-gf.png" alt="Geek Faëries"></a>
+				<a href="<?php bloginfo('url'); ?>/"><img id="banniere-image" src="<?php echo get_template_directory_uri(); ?>/library/images/20xx_photo-foule.png" alt="Illustration"></a>
+				<div id="row-cartouche-header">
+					<div id="rih-1" class="cartouche-header"><p><a href="/qui-sommes-nous/les-geek-faeries-cest-quoi/">I R L</a></p>V6.0 - 5 au 7 juin 2015<br /><i>Selles-sur-Cher (41)</i><br /><a href="/infos-pratiques/">Les Infos Pratiques</a></div>
+					<div id="rih-2" class="cartouche-header"><p><a href="/qui-sommes-nous/geek-faeries-ontheweb-cest-quoi/">On The Web</a></p>V4.0 - 15 au 17 janvier 2016<br />Gratuit & en streaming<br /><a href="/ontheweb-infos-pratiques/">Les Infos Pratiques</a></div>
+				</div>
+			</div>
