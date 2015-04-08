@@ -14,6 +14,10 @@ require_once( 'library/bones.php' );
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 // require_once( 'library/admin.php' );
 
+// LOAD Mobile-Detect (http://mobiledetect.net/)
+require_once( 'library/php/Mobile_Detect.php' );
+$detect = new Mobile_Detect;
+
 /*********************
 LAUNCH BONES
 Let's get everything up and running.

@@ -1,3 +1,4 @@
+<? global $detect; ?>
 <!doctype html>
 
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -54,7 +55,7 @@
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
-
+<? if ( $detect->isMobile() or $detect->isTablet() ) { echo 'MOBILE'; } else {?>
                     <ul class="soc">
 						<li style="width: 89%; text-align: left;"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGeekFaeries&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=dark&amp;action=like&amp;height=35" style="border:none; overflow:hidden; width:450px; height:25px;padding-top: 6px;"></iframe></li>
     <li><a class="soc-twitter" href="https://twitter.com/GeekFaeries"></a></li>
@@ -62,6 +63,7 @@
     <li><a class="soc-youtube" href="https://www.youtube.com/user/StudioAffects"></a></li>
     <li><a class="soc-google soc-icon-last" href="https://plus.google.com/u/0/+GeekFaeriesFr"></a></li>
                     </ul>
+<? } ?>
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
