@@ -48,7 +48,7 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
-				<div id="inner-header" class="wrap cf">
+				<div id="inner-header" class="wrap cf row">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
@@ -56,8 +56,8 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 <? if ( $detect->isMobile() or $detect->isTablet() ) { echo 'MOBILE'; } else {?>
-                    <p id="fb"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGeekFaeries&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=dark&amp;action=like&amp;height=35" style="border:none; overflow:hidden; width:450px; height:25px;padding-top: 6px;"></iframe></p>
-                    <ul class="soc" id=social>
+                    <p id="fb" class="small-2 columns"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGeekFaeries&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=dark&amp;action=like&amp;height=35" style="border:none; overflow:hidden; width:450px; height:25px;padding-top: 6px;"></iframe></p>
+                    <ul class="soc small-2 columns" id=social>
 						
     <li><a class="soc-twitter" href="https://twitter.com/GeekFaeries"></a></li>
     <li><a class="soc-facebook" href="https://www.facebook.com/GeekFaeries"></a></li>

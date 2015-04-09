@@ -44,13 +44,13 @@ HEADER STYLES
 		$gutter_width:		30px;			// px|%			// px = fixed, % = fluid
 		$container_margin:	auto;			// auto|px|%	//
 
-		@include container();
+		//@include container();
 
 		#fb {
 			//margin: 0.75em 0;
 			margin: 0;
-			@include column(8);
-			@include push(0);
+			//@include column(8);
+			//@include push(0);
 			background-color: red;
 
 			a {
@@ -58,8 +58,8 @@ HEADER STYLES
 			}
 		}
         #social {
-            @include column(4);
-			@include push(7);
+           // @include column(4);
+			//@include push(7);
 			background-color: green;
         }
 	}
