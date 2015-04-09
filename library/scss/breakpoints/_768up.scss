@@ -31,7 +31,34 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+    z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+    #inner-header {
+		$total_columns: 	12;			// 				//
+		$total_width:		1140px; 		// px|100% 		// px = fixed, 100% = fluid
+		$gutter_width:		30px;			// px|%			// px = fixed, % = fluid
+		$container_margin:	auto;			// auto|px|%	//
+
+		@include container();
+
+		p {
+			//margin: 0.75em 0;
+			margin: 0;
+			@include column(3);
+			@include push(1);
+			//background-color: red;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+}
 
 	#logo {}
 
