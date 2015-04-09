@@ -1878,6 +1878,9 @@ view.
 */
 /* end .footer-links */
 /*********************
+TEMPORARY ADDONS
+*********************/
+/*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
@@ -2150,6 +2153,24 @@ you can add resource intensive styles.
   }
 
   /* end .footer-links */
+  /*********************
+  TEMPORARY ADDONS
+  *********************/
+  /* line 292, ../scss/breakpoints/_768up.scss */
+  #banniere-cont {
+    height: 349px;
+    margin: 45px auto -33px;
+    position: relative;
+    text-align: center;
+  }
+
+  /* line 300, ../scss/breakpoints/_768up.scss */
+  #banniere-logo {
+    height: 349px;
+    width: 805px;
+    z-index: 3;
+    margin-left: -35px;
+  }
 }
 /*********************
 DESKTOP
@@ -2170,7 +2191,40 @@ you can add resource intensive styles.
   ******************************************************************/
   /* line 12, ../scss/breakpoints/_1030up.scss */
   .wrap {
-    width: 1040px;
+    width: 98%;
+    max-width: 1140px;
+    margin: auto;
+  }
+
+  /*********************
+  TEMPORARY ADDONS
+  *********************/
+  /* line 22, ../scss/breakpoints/_1030up.scss */
+  #banniere-cont {
+    height: 349px;
+    margin: 45px auto -33px;
+    position: relative;
+    max-width: 1140px;
+  }
+
+  /* line 29, ../scss/breakpoints/_1030up.scss */
+  #banniere-logo {
+    position: absolute;
+    left: -40px;
+    height: 349px;
+    width: 805px;
+    z-index: 3;
+  }
+
+  /* line 37, ../scss/breakpoints/_1030up.scss */
+  #banniere-image {
+    background-image: url("../images/20xx_photo-foule.png");
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 255px;
+    width: 691px;
+    z-index: 1;
   }
 }
 /*********************
@@ -2188,7 +2242,17 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  /*********************
+  TEMPORARY ADDONS
+  *********************/
 }
+@media only screen and (min-width: 1240px) and (min-width: 1328px) {
+  /* line 16, ../scss/breakpoints/_1240up.scss */
+  #banniere-logo {
+    left: -150px;
+  }
+}
+
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

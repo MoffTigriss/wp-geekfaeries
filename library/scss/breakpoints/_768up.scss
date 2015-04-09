@@ -285,3 +285,23 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+/*********************
+TEMPORARY ADDONS
+*********************/
+
+#banniere-cont {
+	height: 349px;
+	margin: 45px auto -33px;
+	position: relative;
+	//max-width: 1140px;
+    text-align: center;
+}
+
+#banniere-logo {
+	//position:absolute;
+	//left: -40px;
+	height: 349px;
+	width: 805px;
+	z-index: 3;
+    margin-left: -35px;
+}

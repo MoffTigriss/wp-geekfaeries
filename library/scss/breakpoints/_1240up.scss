@@ -9,3 +9,12 @@ on larger screens.
 
 ******************************************************************/
 
+/*********************
+TEMPORARY ADDONS
+*********************/
+
+#banniere-logo {
+    @media only screen and (min-width: 1328px) {
+	   left: -150px;
+    }
+}
