@@ -24,7 +24,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 760px;
+	width: 760px ;
 }
 
 /*********************
@@ -51,7 +51,7 @@ HEADER STYLES
 			margin: 0;
 			//@include column(8);
 			//@include push(0);
-			background-color: red;
+			//background-color: red;
 
 			a {
 				color: $white;
@@ -60,7 +60,8 @@ HEADER STYLES
         #social {
            // @include column(4);
 			//@include push(7);
-			background-color: green;
+			//background-color: green;
+            margin-top: 6px;
         }
 	}
 }
@@ -361,6 +362,7 @@ TEMPORARY ADDONS
     overflow:hidden;
     margin:0; padding:0;
     list-style:none;
+    text-align: right;
 }
 
 .soc li {
