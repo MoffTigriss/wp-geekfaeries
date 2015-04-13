@@ -44,3 +44,154 @@ TEMPORARY ADDONS
 	width: 691px;
 	z-index: 1;
 }
+
+#row-cartouche-header {
+	/*$total_columns: 	14;			// 				//
+	$total_width:		1140px; 		// px|100% 		// px = fixed, 100% = fluid
+	$gutter_width:		30px;			// px|%			// px = fixed, % = fluid
+	$container_margin:	auto;			// auto|px|%	//*/
+
+	//height: 350px;
+	//@include container();
+	
+	//<img src="<?php echo get_template_directory_uri(); ?>/library/images/bandeau.png" style="margin-top:45px;margin-bottom:-45px;">
+	
+	position: absolute;
+	top: 200px;
+	z-index: 9;
+    
+    max-width: 1140px;
+	
+	.cartouche-header {
+		background-color: $gf-semilight-purple;
+		height: 60px;
+		text-align: center;
+		overflow: hidden;
+    -moz-transition: height 0.2s ease-in-out;
+    -webkit-transition: height 0.2s ease-in-out;
+    -moz-transition: height 0.2s ease-in-out;
+    -o-transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
+		p:first-child {
+			font-family: Ubuntu;
+			font-size: 20px;
+			background-color:$gf-dark-purple;
+			//position: relative;
+			//top:0;
+			margin: 0;
+		}
+	}
+	.cartouche-header:hover {
+			height:120px;
+		
+	}
+	
+	#rih-1 {
+		//@include column(3);
+		//@include push(8);
+        //z-index: 10;
+	}
+	#rih-2{
+		//@include column(3);
+		//@include push(11);
+       //z-index: 11;
+	}
+}
+
+.nav-editions {
+	border: 0;
+	ul {
+		background:$black;
+		margin-top:0;
+	}
+	li {
+		float: left;
+		position: relative;
+
+		a {
+			border-bottom: 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border: 1px solid #ccc;
+			border-top: 0;
+			position: absolute;
+			visibility: hidden;
+			z-index: 8999;
+
+			li {
+
+				a {
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					border-bottom: 1px solid #ccc;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {
+					top:0;
+					left:100%;
+				}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current_page_ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover > ul {
+			top: auto;
+			visibility:visible;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav-editions */

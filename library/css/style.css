@@ -4068,6 +4068,123 @@ you can add resource intensive styles.
     width: 691px;
     z-index: 1;
   }
+
+  /* line 48, ../scss/breakpoints/_1030up.scss */
+  #row-cartouche-header {
+    /*$total_columns: 	14;			// 				//
+    $total_width:		1140px; 		// px|100% 		// px = fixed, 100% = fluid
+    $gutter_width:		30px;			// px|%			// px = fixed, % = fluid
+    $container_margin:	auto;			// auto|px|%	//*/
+    position: absolute;
+    top: 200px;
+    z-index: 9;
+    max-width: 1140px;
+  }
+  /* line 65, ../scss/breakpoints/_1030up.scss */
+  #row-cartouche-header .cartouche-header {
+    background-color: #925FA1;
+    height: 60px;
+    text-align: center;
+    overflow: hidden;
+    -moz-transition: height 0.2s ease-in-out;
+    -webkit-transition: height 0.2s ease-in-out;
+    -moz-transition: height 0.2s ease-in-out;
+    -o-transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
+  }
+  /* line 75, ../scss/breakpoints/_1030up.scss */
+  #row-cartouche-header .cartouche-header p:first-child {
+    font-family: Ubuntu;
+    font-size: 20px;
+    background-color: #6A4080;
+    margin: 0;
+  }
+  /* line 84, ../scss/breakpoints/_1030up.scss */
+  #row-cartouche-header .cartouche-header:hover {
+    height: 120px;
+  }
+
+  /* line 101, ../scss/breakpoints/_1030up.scss */
+  .nav-editions {
+    border: 0;
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  /* line 103, ../scss/breakpoints/_1030up.scss */
+  .nav-editions ul {
+    background: #323944;
+    margin-top: 0;
+  }
+  /* line 107, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li {
+    float: left;
+    position: relative;
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    /* showing sub-menus */
+  }
+  /* line 111, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li a {
+    border-bottom: 0;
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+  }
+  /* line 118, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li a:hover, .nav-editions li a:focus {
+    color: #fff;
+    text-decoration: underline;
+  }
+  /* line 130, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li ul.sub-menu,
+  .nav-editions li ul.children {
+    margin-top: 0;
+    border: 1px solid #ccc;
+    border-top: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 8999;
+    /* highlight sub-menu current page */
+  }
+  /* line 139, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li ul.sub-menu li,
+  .nav-editions li ul.children li {
+    /*
+    if you need to go deeper, go nuts
+    just remember deeper menus suck
+    for usability. k, bai.
+    */
+  }
+  /* line 141, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li ul.sub-menu li a,
+  .nav-editions li ul.children li a {
+    padding-left: 10px;
+    border-right: 0;
+    display: block;
+    width: 180px;
+    border-bottom: 1px solid #ccc;
+  }
+  /* line 158, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li ul.sub-menu li:last-child a,
+  .nav-editions li ul.children li:last-child a {
+    border-bottom: 0;
+  }
+  /* line 168, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li ul.sub-menu li ul,
+  .nav-editions li ul.children li ul {
+    top: 0;
+    left: 100%;
+  }
+  /* line 183, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li:hover > ul {
+    top: auto;
+    visibility: visible;
+  }
+
+  /* end .nav-editions */
 }
 /*********************
 LARGE VIEWING SIZE

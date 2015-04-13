@@ -74,7 +74,7 @@
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
     					         'menu' => __( 'Cartouches éditions à venir', 'wp-geekfaeries' ),  // nav name
-    					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
+    					         'menu_class' => 'nav-editions top-nav cf',               // adding custom nav class
     					         'theme_location' => 'editions',                 // where it's located in the theme
     					         'before' => '',                                 // before the menu
         			               'after' => '',                                  // after the menu
@@ -89,8 +89,8 @@
             <div id="banniere-cont">
 				<a href="<?php bloginfo('url'); ?>/"><img id="banniere-logo" src="<?php echo get_template_directory_uri();?>/library/images/2015_logo-gf.png" title="Geek Faëries" alt="Logo Geek Faëries"></a>
 				<a href="<?php bloginfo('url'); ?>/"><div id="banniere-image"></div></a>
-				<div id="row-cartouche-header">
-					<div id="rih-1" class="cartouche-header"><p><a href="/qui-sommes-nous/les-geek-faeries-cest-quoi/">I R L</a></p>V6.0 - 5 au 7 juin 2015<br /><i>Selles-sur-Cher (41)</i><br /><a href="/infos-pratiques/">Les Infos Pratiques</a></div>
-					<div id="rih-2" class="cartouche-header"><p><a href="/qui-sommes-nous/geek-faeries-ontheweb-cest-quoi/">On The Web</a></p>V4.0 - 15 au 17 janvier 2016<br />Gratuit & en streaming<br /><a href="/ontheweb-infos-pratiques/">Les Infos Pratiques</a></div>
+				<div id="row-cartouche-header" class="row">
+					<div id="rih-1" class="cartouche-header small-2 columns small-offset-7"><p><a href="/qui-sommes-nous/les-geek-faeries-cest-quoi/">I R L</a></p>V6.0 - 5 au 7 juin 2015<br /><i>Selles-sur-Cher (41)</i><br /><a href="/infos-pratiques/">Les Infos Pratiques</a></div>
+					<div id="rih-2" class="cartouche-header small-2 columns small-offset-1"><p><a href="/qui-sommes-nous/geek-faeries-ontheweb-cest-quoi/">On The Web</a></p>V4.0 - 15 au 17 janvier 2016<br />Gratuit & en streaming<br /><a href="/ontheweb-infos-pratiques/">Les Infos Pratiques</a></div>
 				</div>
 			</div>
