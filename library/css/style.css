@@ -3082,10 +3082,8 @@ POSTS & CONTENT STYLES
 
 /* line 258, ../scss/breakpoints/_base.scss */
 .hentry {
-  background-color: #fff;
-  border-radius: 3px;
+  background-color: #503060;
   margin-bottom: 1.5em;
-  border: 1px solid #ccc;
 }
 /* line 264, ../scss/breakpoints/_base.scss */
 .hentry header {
@@ -3873,6 +3871,7 @@ you can add resource intensive styles.
     width: 805px;
     z-index: 3;
     margin-left: -35px;
+    min-width: 805px;
   }
 
   @font-face {
@@ -3890,7 +3889,7 @@ you can add resource intensive styles.
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 361, ../scss/breakpoints/_768up.scss */
+  /* line 362, ../scss/breakpoints/_768up.scss */
   .soc {
     overflow: hidden;
     margin: 0;
@@ -3899,14 +3898,14 @@ you can add resource intensive styles.
     text-align: right;
   }
 
-  /* line 368, ../scss/breakpoints/_768up.scss */
+  /* line 369, ../scss/breakpoints/_768up.scss */
   .soc li {
     display: inline-block;
     *display: inline;
     zoom: 1;
   }
 
-  /* line 374, ../scss/breakpoints/_768up.scss */
+  /* line 375, ../scss/breakpoints/_768up.scss */
   .soc li a {
     font-family: si !important;
     font-style: normal;
@@ -3945,72 +3944,72 @@ you can add resource intensive styles.
     background-color: none;
   }
 
-  /* line 404, ../scss/breakpoints/_768up.scss */
+  /* line 405, ../scss/breakpoints/_768up.scss */
   .soc a:hover {
     z-index: 2;
   }
 
-  /* line 406, ../scss/breakpoints/_768up.scss */
+  /* line 407, ../scss/breakpoints/_768up.scss */
   .soc-icon-last {
     margin: 0 !important;
   }
 
-  /* line 410, ../scss/breakpoints/_768up.scss */
+  /* line 411, ../scss/breakpoints/_768up.scss */
   .soc-twitter {
     background-color: #4da7de;
   }
 
-  /* line 413, ../scss/breakpoints/_768up.scss */
+  /* line 414, ../scss/breakpoints/_768up.scss */
   .soc-twitter:before {
     content: 'a';
   }
 
-  /* line 416, ../scss/breakpoints/_768up.scss */
+  /* line 417, ../scss/breakpoints/_768up.scss */
   .soc-facebook {
     background-color: #3e5b98;
   }
 
-  /* line 419, ../scss/breakpoints/_768up.scss */
+  /* line 420, ../scss/breakpoints/_768up.scss */
   .soc-facebook:before {
     content: 'b';
   }
 
-  /* line 422, ../scss/breakpoints/_768up.scss */
+  /* line 423, ../scss/breakpoints/_768up.scss */
   .soc-youtube {
     background-color: #e02a20;
   }
 
-  /* line 425, ../scss/breakpoints/_768up.scss */
+  /* line 426, ../scss/breakpoints/_768up.scss */
   .soc-youtube:before {
     content: 'r';
   }
 
-  /* line 428, ../scss/breakpoints/_768up.scss */
+  /* line 429, ../scss/breakpoints/_768up.scss */
   .soc-google {
     background-color: #d93e2d;
   }
 
-  /* line 431, ../scss/breakpoints/_768up.scss */
+  /* line 432, ../scss/breakpoints/_768up.scss */
   .soc-google:before {
     content: 'c';
   }
 
-  /* line 435, ../scss/breakpoints/_768up.scss */
+  /* line 436, ../scss/breakpoints/_768up.scss */
   .soc-twitter:hover {
     background-color: #61bbf2;
   }
 
-  /* line 438, ../scss/breakpoints/_768up.scss */
+  /* line 439, ../scss/breakpoints/_768up.scss */
   .soc-facebook:hover {
     background-color: #526fac;
   }
 
-  /* line 441, ../scss/breakpoints/_768up.scss */
+  /* line 442, ../scss/breakpoints/_768up.scss */
   .soc-youtube:hover {
     background-color: #f43e34;
   }
 
-  /* line 444, ../scss/breakpoints/_768up.scss */
+  /* line 445, ../scss/breakpoints/_768up.scss */
   .soc-google:hover {
     background-color: #ed5241;
   }
