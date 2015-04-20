@@ -98,17 +98,38 @@ TEMPORARY ADDONS
 	}
 }
 
-.nav-editions {
-	border: 0;
-	ul {
-		background:$black;
-		margin-top:0;
-	}
+.nav-editions { 
+    $column-gutter: 30px;
+    @include grid-row();
+	//border: 0;
+    position: absolute;
+	top: 200px;
+	z-index: 9;
+    
+    max-width: 1140px;
+        
 	li {
-		float: left;
-		position: relative;
+		//float: left;
+		//position: relative;
+        background-color: $gf-semilight-purple;
+		height: 60px;
+		text-align: center;
+		overflow: hidden;
+        @include transition(height 0.2s ease-in-out);
 
-		a {
+
+        &:nth-child(1) {
+            @include grid-column($columns:2,$offset:7);
+        }
+
+        &:nth-child(2) {
+            @include grid-column($columns:2,$offset:1);
+        }
+
+		&:first-child {}
+		&:last-child {}
+
+        a {
 			border-bottom: 0;
 
 			/*
@@ -120,10 +141,7 @@ TEMPORARY ADDONS
 				text-decoration: underline;
 			}
 		}
-
-		&:first-child {}
-		&:last-child {}
-
+        
 		/*
 		plan your menus and drop-downs wisely.
 		*/
@@ -170,6 +188,10 @@ TEMPORARY ADDONS
 					left:100%;
 				}
 			}
+            
+            &:hover {
+                height:120px;
+            }
 
 			/* highlight sub-menu current page */
 			li.current-menu-item,

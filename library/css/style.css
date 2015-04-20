@@ -4106,26 +4106,56 @@ you can add resource intensive styles.
 
   /* line 101, ../scss/breakpoints/_1030up.scss */
   .nav-editions {
-    border: 0;
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    z-index: 9;
+    max-width: 1140px;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 103, ../scss/breakpoints/_1030up.scss */
-  .nav-editions ul {
-    background: #323944;
-    margin-top: 0;
+  /* line 172, ../scss/foundation/components/_global.scss */
+  .nav-editions:before, .nav-editions:after {
+    content: " ";
+    display: table;
   }
-  /* line 107, ../scss/breakpoints/_1030up.scss */
+  /* line 173, ../scss/foundation/components/_global.scss */
+  .nav-editions:after {
+    clear: both;
+  }
+  /* line 111, ../scss/breakpoints/_1030up.scss */
   .nav-editions li {
-    float: left;
-    position: relative;
+    background-color: #925FA1;
+    height: 60px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
     /*
     plan your menus and drop-downs wisely.
     */
     /* showing sub-menus */
   }
-  /* line 111, ../scss/breakpoints/_1030up.scss */
+  /* line 121, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li:nth-child(1) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 16.66667%;
+    float: left;
+    margin-left: 58.33333% !important;
+  }
+  /* line 125, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li:nth-child(2) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 16.66667%;
+    float: left;
+    margin-left: 8.33333% !important;
+  }
+  /* line 132, ../scss/breakpoints/_1030up.scss */
   .nav-editions li a {
     border-bottom: 0;
     /*
@@ -4133,12 +4163,12 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 118, ../scss/breakpoints/_1030up.scss */
+  /* line 139, ../scss/breakpoints/_1030up.scss */
   .nav-editions li a:hover, .nav-editions li a:focus {
     color: #fff;
     text-decoration: underline;
   }
-  /* line 130, ../scss/breakpoints/_1030up.scss */
+  /* line 148, ../scss/breakpoints/_1030up.scss */
   .nav-editions li ul.sub-menu,
   .nav-editions li ul.children {
     margin-top: 0;
@@ -4149,7 +4179,7 @@ you can add resource intensive styles.
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 139, ../scss/breakpoints/_1030up.scss */
+  /* line 157, ../scss/breakpoints/_1030up.scss */
   .nav-editions li ul.sub-menu li,
   .nav-editions li ul.children li {
     /*
@@ -4158,7 +4188,7 @@ you can add resource intensive styles.
     for usability. k, bai.
     */
   }
-  /* line 141, ../scss/breakpoints/_1030up.scss */
+  /* line 159, ../scss/breakpoints/_1030up.scss */
   .nav-editions li ul.sub-menu li a,
   .nav-editions li ul.children li a {
     padding-left: 10px;
@@ -4167,18 +4197,23 @@ you can add resource intensive styles.
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 158, ../scss/breakpoints/_1030up.scss */
+  /* line 176, ../scss/breakpoints/_1030up.scss */
   .nav-editions li ul.sub-menu li:last-child a,
   .nav-editions li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 168, ../scss/breakpoints/_1030up.scss */
+  /* line 186, ../scss/breakpoints/_1030up.scss */
   .nav-editions li ul.sub-menu li ul,
   .nav-editions li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 183, ../scss/breakpoints/_1030up.scss */
+  /* line 192, ../scss/breakpoints/_1030up.scss */
+  .nav-editions li ul.sub-menu:hover,
+  .nav-editions li ul.children:hover {
+    height: 120px;
+  }
+  /* line 205, ../scss/breakpoints/_1030up.scss */
   .nav-editions li:hover > ul {
     top: auto;
     visibility: visible;
