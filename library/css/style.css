@@ -4289,7 +4289,7 @@ POSTS & CONTENT STYLES
 *********************/
 /* line 254, ../scss/breakpoints/_base.scss */
 #content {
-  margin-top: 1.5em;
+  margin-top: 30px;
 }
 
 /* line 258, ../scss/breakpoints/_base.scss */
@@ -5289,53 +5289,18 @@ you can add resource intensive styles.
   }
 
   /* line 48, ../scss/breakpoints/_1030up.scss */
-  #row-cartouche-header {
-    /*$total_columns: 	14;			// 				//
-    $total_width:		1140px; 		// px|100% 		// px = fixed, 100% = fluid
-    $gutter_width:		30px;			// px|%			// px = fixed, % = fluid
-    $container_margin:	auto;			// auto|px|%	//*/
-    position: absolute;
-    top: 200px;
-    z-index: 9;
-    max-width: 1140px;
-  }
-  /* line 65, ../scss/breakpoints/_1030up.scss */
-  #row-cartouche-header .cartouche-header {
-    background-color: #925FA1;
-    height: 60px;
-    text-align: center;
-    overflow: hidden;
-    -moz-transition: height 0.2s ease-in-out;
-    -webkit-transition: height 0.2s ease-in-out;
-    -moz-transition: height 0.2s ease-in-out;
-    -o-transition: height 0.2s ease-in-out;
-    transition: height 0.2s ease-in-out;
-  }
-  /* line 75, ../scss/breakpoints/_1030up.scss */
-  #row-cartouche-header .cartouche-header p:first-child {
-    font-family: Ubuntu;
-    font-size: 20px;
-    background-color: #6A4080;
-    margin: 0;
-  }
-  /* line 84, ../scss/breakpoints/_1030up.scss */
-  #row-cartouche-header .cartouche-header:hover {
-    height: 120px;
-  }
-
-  /* line 101, ../scss/breakpoints/_1030up.scss */
   #top-nav-editions {
     max-width: 1140px;
     margin: 0 auto;
   }
 
-  /* line 106, ../scss/breakpoints/_1030up.scss */
+  /* line 53, ../scss/breakpoints/_1030up.scss */
   .nav-editions {
     margin: 0 auto;
     max-width: 62.5rem;
     width: 100%;
     position: absolute;
-    top: 200px;
+    top: 195px;
     z-index: 9;
     max-width: 1140px;
     /* end .menu ul li */
@@ -5351,7 +5316,7 @@ you can add resource intensive styles.
   .nav-editions:after {
     clear: both;
   }
-  /* line 114, ../scss/breakpoints/_1030up.scss */
+  /* line 61, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -5366,28 +5331,28 @@ you can add resource intensive styles.
     plan your menus and drop-downs wisely.
     */
   }
-  /* line 121, ../scss/breakpoints/_1030up.scss */
+  /* line 68, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li:hover, .nav-editions > li:focus {
     height: 120px;
   }
-  /* line 125, ../scss/breakpoints/_1030up.scss */
+  /* line 72, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li:first-child {
-    margin-right: 15px;
+    margin-right: -15px;
   }
-  /* line 128, ../scss/breakpoints/_1030up.scss */
+  /* line 75, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li a {
     font-size: 20px;
     display: block;
     height: 30px;
     background-color: #6A4080;
   }
-  /* line 138, ../scss/breakpoints/_1030up.scss */
+  /* line 85, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li ul.sub-menu,
   .nav-editions > li ul.children {
     margin: 0;
     /* highlight sub-menu current page */
   }
-  /* line 145, ../scss/breakpoints/_1030up.scss */
+  /* line 92, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li ul.sub-menu li a,
   .nav-editions > li ul.children li a {
     font-family: "Ubuntu Condensed";
@@ -5396,7 +5361,7 @@ you can add resource intensive styles.
     text-decoration: none;
     padding-top: 2px;
   }
-  /* line 162, ../scss/breakpoints/_1030up.scss */
+  /* line 109, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li ul.sub-menu li:last-child a,
   .nav-editions > li ul.children li:last-child a {
     text-decoration: underline;
@@ -5424,12 +5389,16 @@ This is for the larger monitors and possibly full screen viewers.
   *********************/
 }
 @media only screen and (min-width: 1240px) and (min-width: 1328px) {
-  /* line 16, ../scss/breakpoints/_1240up.scss */
+  /* line 17, ../scss/breakpoints/_1240up.scss */
   #banniere-logo {
     left: -150px;
   }
-}
 
+  /* line 24, ../scss/breakpoints/_1240up.scss */
+  .nav-editions > li:first-child {
+    margin-right: 15px;
+  }
+}
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
