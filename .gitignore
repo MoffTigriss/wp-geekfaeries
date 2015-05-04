@@ -58,3 +58,4 @@ temp/
 *.scssc
 *.css
 library/css/style.css
+*.map
