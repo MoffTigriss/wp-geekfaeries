@@ -5082,13 +5082,13 @@ you can add resource intensive styles.
     margin: 45px auto -33px;
     position: relative;
     text-align: center;
+    max-width: 1140px;
   }
 
-  /* line 333, ../scss/breakpoints/_768up.scss */
+  /* line 334, ../scss/breakpoints/_768up.scss */
   #banniere-logo {
     height: 349px;
     width: 805px;
-    z-index: 3;
     margin-left: -35px;
     min-width: 805px;
   }
@@ -5108,7 +5108,7 @@ you can add resource intensive styles.
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 362, ../scss/breakpoints/_768up.scss */
+  /* line 361, ../scss/breakpoints/_768up.scss */
   .soc {
     overflow: hidden;
     margin: 0;
@@ -5117,14 +5117,14 @@ you can add resource intensive styles.
     text-align: right;
   }
 
-  /* line 369, ../scss/breakpoints/_768up.scss */
+  /* line 368, ../scss/breakpoints/_768up.scss */
   .soc li {
     display: inline-block;
     *display: inline;
     zoom: 1;
   }
 
-  /* line 375, ../scss/breakpoints/_768up.scss */
+  /* line 374, ../scss/breakpoints/_768up.scss */
   .soc li a {
     font-family: si !important;
     font-style: normal;
@@ -5163,72 +5163,72 @@ you can add resource intensive styles.
     background-color: none;
   }
 
-  /* line 405, ../scss/breakpoints/_768up.scss */
+  /* line 404, ../scss/breakpoints/_768up.scss */
   .soc a:hover {
     z-index: 2;
   }
 
-  /* line 407, ../scss/breakpoints/_768up.scss */
+  /* line 406, ../scss/breakpoints/_768up.scss */
   .soc-icon-last {
     margin: 0 !important;
   }
 
-  /* line 411, ../scss/breakpoints/_768up.scss */
+  /* line 410, ../scss/breakpoints/_768up.scss */
   .soc-twitter {
     background-color: #4da7de;
   }
 
-  /* line 414, ../scss/breakpoints/_768up.scss */
+  /* line 413, ../scss/breakpoints/_768up.scss */
   .soc-twitter:before {
     content: 'a';
   }
 
-  /* line 417, ../scss/breakpoints/_768up.scss */
+  /* line 416, ../scss/breakpoints/_768up.scss */
   .soc-facebook {
     background-color: #3e5b98;
   }
 
-  /* line 420, ../scss/breakpoints/_768up.scss */
+  /* line 419, ../scss/breakpoints/_768up.scss */
   .soc-facebook:before {
     content: 'b';
   }
 
-  /* line 423, ../scss/breakpoints/_768up.scss */
+  /* line 422, ../scss/breakpoints/_768up.scss */
   .soc-youtube {
     background-color: #e02a20;
   }
 
-  /* line 426, ../scss/breakpoints/_768up.scss */
+  /* line 425, ../scss/breakpoints/_768up.scss */
   .soc-youtube:before {
     content: 'r';
   }
 
-  /* line 429, ../scss/breakpoints/_768up.scss */
+  /* line 428, ../scss/breakpoints/_768up.scss */
   .soc-google {
     background-color: #d93e2d;
   }
 
-  /* line 432, ../scss/breakpoints/_768up.scss */
+  /* line 431, ../scss/breakpoints/_768up.scss */
   .soc-google:before {
     content: 'c';
   }
 
-  /* line 436, ../scss/breakpoints/_768up.scss */
+  /* line 435, ../scss/breakpoints/_768up.scss */
   .soc-twitter:hover {
     background-color: #61bbf2;
   }
 
-  /* line 439, ../scss/breakpoints/_768up.scss */
+  /* line 438, ../scss/breakpoints/_768up.scss */
   .soc-facebook:hover {
     background-color: #526fac;
   }
 
-  /* line 442, ../scss/breakpoints/_768up.scss */
+  /* line 441, ../scss/breakpoints/_768up.scss */
   .soc-youtube:hover {
     background-color: #f43e34;
   }
 
-  /* line 445, ../scss/breakpoints/_768up.scss */
+  /* line 444, ../scss/breakpoints/_768up.scss */
   .soc-google:hover {
     background-color: #ed5241;
   }
@@ -5261,23 +5261,12 @@ you can add resource intensive styles.
   TEMPORARY ADDONS
   *********************/
   /* line 22, ../scss/breakpoints/_1030up.scss */
-  #banniere-cont {
-    height: 349px;
-    margin: 45px auto -33px;
-    position: relative;
-    max-width: 1140px;
-  }
-
-  /* line 29, ../scss/breakpoints/_1030up.scss */
   #banniere-logo {
     position: absolute;
     left: -40px;
-    height: 349px;
-    width: 805px;
-    z-index: 3;
   }
 
-  /* line 37, ../scss/breakpoints/_1030up.scss */
+  /* line 27, ../scss/breakpoints/_1030up.scss */
   #banniere-image {
     background-image: url("../images/20xx_photo-foule.png");
     position: absolute;
@@ -5285,16 +5274,16 @@ you can add resource intensive styles.
     top: 60px;
     height: 255px;
     width: 691px;
-    z-index: 1;
+    z-index: -1;
   }
 
-  /* line 48, ../scss/breakpoints/_1030up.scss */
+  /* line 38, ../scss/breakpoints/_1030up.scss */
   #top-nav-editions {
     max-width: 1140px;
     margin: 0 auto;
   }
 
-  /* line 53, ../scss/breakpoints/_1030up.scss */
+  /* line 43, ../scss/breakpoints/_1030up.scss */
   .nav-editions {
     margin: 0 auto;
     max-width: 62.5rem;
@@ -5316,7 +5305,7 @@ you can add resource intensive styles.
   .nav-editions:after {
     clear: both;
   }
-  /* line 61, ../scss/breakpoints/_1030up.scss */
+  /* line 51, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -5331,28 +5320,28 @@ you can add resource intensive styles.
     plan your menus and drop-downs wisely.
     */
   }
-  /* line 68, ../scss/breakpoints/_1030up.scss */
+  /* line 58, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li:hover, .nav-editions > li:focus {
     height: 120px;
   }
-  /* line 72, ../scss/breakpoints/_1030up.scss */
+  /* line 62, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li:first-child {
     margin-right: -15px;
   }
-  /* line 75, ../scss/breakpoints/_1030up.scss */
+  /* line 65, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li a {
     font-size: 20px;
     display: block;
     height: 30px;
     background-color: #6A4080;
   }
-  /* line 85, ../scss/breakpoints/_1030up.scss */
+  /* line 75, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li ul.sub-menu,
   .nav-editions > li ul.children {
     margin: 0;
     /* highlight sub-menu current page */
   }
-  /* line 92, ../scss/breakpoints/_1030up.scss */
+  /* line 82, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li ul.sub-menu li a,
   .nav-editions > li ul.children li a {
     font-family: "Ubuntu Condensed";
@@ -5361,7 +5350,7 @@ you can add resource intensive styles.
     text-decoration: none;
     padding-top: 2px;
   }
-  /* line 109, ../scss/breakpoints/_1030up.scss */
+  /* line 99, ../scss/breakpoints/_1030up.scss */
   .nav-editions > li ul.sub-menu li:last-child a,
   .nav-editions > li ul.children li:last-child a {
     text-decoration: underline;
