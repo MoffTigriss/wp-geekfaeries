@@ -98,100 +98,71 @@ TEMPORARY ADDONS
 	}
 }
 
+#top-nav-editions {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .nav-editions { 
-    $column-gutter: 30px;
     @include grid-row();
-	//border: 0;
     position: absolute;
 	top: 200px;
 	z-index: 9;
     
     max-width: 1140px;
         
-	li {
-		//float: left;
-		//position: relative;
-        background-color: $gf-semilight-purple;
+	> li {
+        @include grid-column($columns:5,$float:right);
+        @include transition(height 0.2s ease-in-out);
 		height: 60px;
 		text-align: center;
 		overflow: hidden;
-        @include transition(height 0.2s ease-in-out);
-
-
-        &:nth-child(1) {
-            @include grid-column($columns:2,$offset:7);
+        
+        &:hover, &:focus {
+            height: 120px;
         }
 
-        &:nth-child(2) {
-            @include grid-column($columns:2,$offset:1);
-        }
-
-		&:first-child {}
+		&:first-child { margin-right: 15px; }
 		&:last-child {}
 
         a {
-			border-bottom: 0;
-
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color: $white;
-				text-decoration: underline;
-			}
+            font-size: 20px;
+            display: block;
+            height: 30px;
+            background-color: $gf-dark-purple;
 		}
-        
+
 		/*
 		plan your menus and drop-downs wisely.
 		*/
 		ul.sub-menu,
 		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
-			position: absolute;
-			visibility: hidden;
-			z-index: 8999;
+			margin: 0;
+			//z-index: 8999;
 
 			li {
 
 				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
+                    font-family: $sans-serif-condensed;
+                    font-size: 16px;
+                    background-color: $gf-semilight-purple;
+                    text-decoration: none;
+                    padding-top: 2px;
 
 					&:hover,
 					&:focus {}
 
 					&:link {}
+
 				}
 
 				&:first-child {}
 
 				&:last-child {
+                    a { text-decoration: underline; }
+                }
 
-					a {
-						border-bottom: 0;
-					}
-				}
-
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {
-					top:0;
-					left:100%;
-				}
 			}
-            
-            &:hover {
-                height:120px;
-            }
 
 			/* highlight sub-menu current page */
 			li.current-menu-item,
@@ -199,12 +170,6 @@ TEMPORARY ADDONS
 			li.current_page_ancestor {
 				a {}
 			}
-		}
-
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility:visible;
 		}
 
 	} /* end .menu ul li */

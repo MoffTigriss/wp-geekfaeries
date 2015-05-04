@@ -56,8 +56,8 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 <? if ( $detect->isMobile() or $detect->isTablet() ) { echo 'MOBILE'; } else {?>
-                    <p id="fb" class="small-9 columns"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGeekFaeries&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=dark&amp;action=like&amp;height=35" style="border:none; overflow:hidden; width:450px; height:25px;padding-top: 6px;"></iframe></p>
-                    <ul class="soc small-2 columns" id=social>
+                    <p id="fb" class="small-18 columns"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGeekFaeries&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=dark&amp;action=like&amp;height=35" style="border:none; overflow:hidden; width:450px; height:25px;padding-top: 6px;"></iframe></p>
+                    <ul class="soc small-4 columns" id=social>
                         <li><a class="soc-twitter" href="https://twitter.com/GeekFaeries"></a></li>
                         <li><a class="soc-facebook" href="https://www.facebook.com/GeekFaeries"></a></li>
                         <li><a class="soc-youtube" href="https://www.youtube.com/user/StudioAffects"></a></li>
@@ -69,7 +69,7 @@
 
 			</header>
             
-            					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            					<nav role="navigation" id="top-nav-editions" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
@@ -81,7 +81,8 @@
         			               'link_before' => '',                            // before each link
         			               'link_after' => '',                             // after each link
         			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
+    					         'fallback_cb' => '',                             // fallback function (if there is one)
+                                'reverse' => false
 						)); ?>
 
 					</nav>
