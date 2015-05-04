@@ -216,6 +216,13 @@ function bones_theme_support() {
 			'footer-links' => __( 'Footer Links', 'wp-geekfaeries' ) // secondary nav in footer
 		)
 	);
+    // Enable support for HTML5 markup.
+	add_theme_support( 'html5', array(
+            'comment-list',
+            'search-form',
+            'comment-form'
+	) );
+
 } /* end bones theme support */
 
 
