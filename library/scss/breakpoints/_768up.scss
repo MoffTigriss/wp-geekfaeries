@@ -171,12 +171,23 @@ NAVIGATION STYLES
 } /* end .nav */
 
 /*********************
+CONTENT & MAIN
+*********************/
+
+#main {
+    float: left;
+    width: 805px;
+}
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
     background-color: dodgerblue;
 	//margin-top: 2.2em;
+    float: right;
+    width: 305px;
 }
 
 	.widgettitle {
