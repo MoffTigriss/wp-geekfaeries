@@ -40,6 +40,20 @@ FONT FACE (IN YOUR FACE)
   }
 */
 
+//@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu);
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v7/sDGTilo5QRsfWu6Yc11AXg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(http://fonts.gstatic.com/s/ubuntucondensed/v6/DBCt-NXN57MTAFjitYxdrDAdhzWOYhqHvOZMRGaEyPo.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntucondensed/v6/DBCt-NXN57MTAFjitYxdrFzqCfRpIA3W6ypxnPISCPA.woff) format('woff');
+}
+
 
 /*
 The following is based of Typebase:
@@ -49,7 +63,8 @@ I've edited it a bit, but it's a nice starting point.
 
 
 // font stacks
-$sans-serif:        "Uubuntu", "Segoe UI", Verdana, Helvetica, sans-serif;
+$sans-serif:        "Ubuntu", "Segoe UI", Verdana, Helvetica, sans-serif;
+$sans-serif-condensed:        "Ubuntu Condensed";
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 
 /*
