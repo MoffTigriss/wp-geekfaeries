@@ -184,24 +184,36 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-    background-color: dodgerblue;
 	//margin-top: 2.2em;
     float: right;
-    width: 305px;
+    width: 305px; 
 }
 
 	.widgettitle {
 		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
+		//margin-bottom: 0.75em;
+        
 	}
 
 	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+        background-color: $gf-dark-purple;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        //padding: 1px 0;
+		//padding: 0 10px;
+		//margin: 2.2em 0;
+        
+        &:first-child {margin-top: 0;}
+        &:last-child {margin-bottom: 0;}
+        
+        h4 {
+            margin: 0;
+        }
 
 		ul {
+            margin: 0;
 			li {
-				margin-bottom: 0.75em;
+				//margin-bottom: 0.75em;
 
 				&:first-child {}
 				&:last-child {}
@@ -209,13 +221,67 @@ SIDEBARS & ASIDES
 				/* deep nesting */
 
 				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
+					//margin-top: 0.75em;
+					//padding-left: 1em;
 				}
 			}
 		}
 	}
 
+    /* menu widget */
+    .widget_nav_menu {
+        border-right: 15px solid $gf-darker-purple;
+        box-shadow: -10px 0 10px -7px rgba(80, 48, 96, 1) inset;
+    }
+
+    .widget_menu_important {
+        background-color: $gf-semilight-purple;
+        border-color: $gf-dark-purple;
+        
+        &:hover {
+            background-color: #3f4393 !important;
+        }
+    }
+
+    .widget_nav_menu div ul {}
+    .widget_nav_menu div ul li {
+        
+        &:last-child {
+            border: 0;
+        }
+        
+        &:first-child:hover {
+            margin: 0;
+            padding-top: 0;
+        }
+        
+        &:last-child:hover {
+            height: 45px;
+        }
+        
+        &:hover {
+            background-color: #34315d;
+            margin-top: -1px;
+            padding-top: 1px;
+            border: 0;
+            margin-bottom: 1px;
+        }
+        
+        height: 44px;
+
+        @include flexbox;
+        @include justify-content(center);
+        @include align-items(center);
+        
+        border-color: $gf-semilight-purple;
+        border-style: solid;
+        border-width: 0 0 1px;
+        @include transition(color 0.3s ease 0s, background-color 0.3s ease 0s);
+        box-shadow: -10px 0 10px -7px rgba(80, 48, 96, 1) inset;
+    }
+    .widget_nav_menu div ul li a {
+        text-decoration: none;
+    }
 
 	/* links widget */
 	.widget_links {}
