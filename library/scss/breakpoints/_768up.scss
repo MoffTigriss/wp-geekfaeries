@@ -39,28 +39,15 @@ HEADER STYLES
 	width: 100%;
 
     #inner-header {
-		/*$total_columns: 	12;			// 				//
-		$total_width:		100%; 		// px|100% 		// px = fixed, 100% = fluid
-		$gutter_width:		30px;			// px|%			// px = fixed, % = fluid
-		$container_margin:	auto;			// auto|px|%	//*/
-
-		//@include container();
 
 		#fb {
-			//margin: 0.75em 0;
 			margin: 0;
-			//@include column(8);
-			//@include push(0);
-			//background-color: red;
 
 			a {
 				color: $white;
 			}
 		}
         #social {
-           // @include column(4);
-			//@include push(7);
-			//background-color: green;
             margin-top: 6px;
         }
 	}
@@ -180,6 +167,98 @@ CONTENT & MAIN
 }
 
 /*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+}
+
+        #articles-grid {
+            @include flexbox;
+            @include flex-direction(row);
+            @include justify-content(space-between);
+            @include flex-wrap(wrap);
+            @include align-items(flex-start);
+            @include align-content(flex-start);
+
+            //justify-content: space-between;
+            //flex-wrap: wrap;
+            //align-items: flex-start;
+            //align-content: flex-start;
+        }
+
+		.hentry {
+            @include flexbox;
+            @include flex-direction(column);
+            
+            width:387px;
+            height: 222px;
+            
+            margin-bottom: 30px;
+            
+            font-family: $sans-serif-condensed;
+            text-align: justify;
+
+			header {
+                padding: 0;
+				border: 0;
+                
+                #cartouche-tag-date {
+                    background-color: black;
+                    text-align: center;
+                    width: 50px;
+                    float: left;
+                    margin-right: 5px;
+                    line-height: 1.23em;
+                    max-height: 2.45em;
+                }
+			}
+            
+            .entry-title {
+                background-color: $gf-darker-purple;
+                padding-right: 5px;
+            }
+
+			footer {
+				p {}
+			}
+        
+        &.article-mea {
+            width: 805px;
+            height: 300px;
+        }
+
+		} /* end .hentry */
+
+		.byline {
+			color: #fff;
+			font-style: normal;
+
+			time {
+                background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+                float: right;
+                padding: 0 3px;
+            }
+            .by, .author {
+                display: none;
+            }
+		}
+
+        /* entry content */
+		.entry-content {
+            background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+            padding: 0 5px 0 5px;
+            line-height: 1.4em;
+            //text-align: justify;
+            overflow: hidden;
+            max-height: 4.2em;      //Trois lignes 1.4em
+            margin-top: auto;
+            p {
+                margin: 0;
+            }
+        }
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 
@@ -197,11 +276,7 @@ SIDEBARS & ASIDES
 
 	.widget {
         background-color: $gf-dark-purple;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        //padding: 1px 0;
-		//padding: 0 10px;
-		//margin: 2.2em 0;
+        margin: 30px 0;
         
         &:first-child {margin-top: 0;}
         &:last-child {margin-bottom: 0;}
@@ -261,10 +336,11 @@ SIDEBARS & ASIDES
         
         &:hover {
             background-color: #34315d;
-            margin-top: -1px;
+            margin: -1px 0 1px 0;
+            //margin-top: -1px;
             padding-top: 1px;
             border: 0;
-            margin-bottom: 1px;
+            //margin-bottom: 1px;
         }
         
         height: 44px;
@@ -366,7 +442,9 @@ SIDEBARS & ASIDES
 	.screen-reader-text {}
 
 	/* text widget */
-	.textwidget {}
+	.textwidget {
+        line-height: 0; // Fix pour Bandcamp & cie
+    }
 	.widget_text {}
 	.textwidget p {}
 
