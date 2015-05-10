@@ -251,7 +251,7 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
-/************* ADD-ONS FONCTS *********************/
+/************* ADD-ONS FONCTIONSS *********************/
 
 /**
  * Enables a 'reverse' option for wp_nav_menu to reverse the order of menu 
@@ -266,6 +266,26 @@ function my_reverse_nav_menu($menu, $args) {
   return $menu;
 }
 add_filter('wp_nav_menu_objects', 'my_reverse_nav_menu', 10, 2);
+
+function cartouche_annee($tags){
+	$annees = ['2015','2014','2016','2013','2012','2011','2010','2009',];
+	foreach ($annees as $value){
+		if (strpos($tags,$value)) {
+			return $value;
+		}
+	}
+	return '2016';
+}
+
+function cartouche_event($tags){
+	$event = ['IRL','OTW','Autre'];
+	foreach ($event as $value){
+		if (strpos($tags,$value)) {
+			return $value;
+		}
+	}
+	return 'IRL';
+}
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

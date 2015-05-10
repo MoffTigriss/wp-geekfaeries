@@ -23,7 +23,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf article-mea' ); ?> role="article" style="background-image:url(<?php echo $imageData[0]; ?>); background-repeat:no-repeat; background-position: center 2.45em;">
 
 								<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><header class="article-header">
-                                    <div id="cartouche-tag-date">IRL<br />2015</div>
+                                    <div id="cartouche-tag-date"><?php echo cartouche_event(get_the_category_list()); ?><br /><?php echo cartouche_annee(get_the_category_list()); ?></div>
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline entry-meta vcard">
                                                                         <?php printf('%1$s %2$s',
@@ -83,7 +83,7 @@ $super_query = new WP_Query($args);?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" style="background-image:url(<?php echo $imageData[0]; ?>); background-repeat:no-repeat; background-position: center 2.45em;">
 
 								<header class="article-header">
-                                    <div id="cartouche-tag-date">IRL<br />2015</div>
+                                    <div id="cartouche-tag-date"><?php echo cartouche_event(get_the_category_list()); ?><br /><?php echo cartouche_annee(get_the_category_list()); ?></div>
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline entry-meta vcard">
                                                                         <?php printf(' %1$s %2$s',
