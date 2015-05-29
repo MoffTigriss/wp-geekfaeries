@@ -18,11 +18,9 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                             
 <?php $imageData = wp_get_attachment_image_src(get_post_thumbnail_id ( $post_ID ), 'img-article-mea-index-1080'); ?>
 
-
-
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf main-page-posts article-mea' ); ?> role="article" style="background-image:url(<?php echo $imageData[0]; ?>); background-repeat:no-repeat; background-position: center 2.45em;">
-
-								<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><header class="article-header">
+                                
+								<header class="article-header">
                                     <div id="cartouche-tag-date"><?php echo cartouche_event(get_the_category_list()); ?><br /><?php echo cartouche_annee(get_the_category_list()); ?></div>
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline entry-meta vcard">
@@ -34,10 +32,10 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                     							); ?>
 									</p>
 
-								</header></a>
-
+								</header>
+                                <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>" class="fulllink"></a>
 								<section class="entry-content cf main-page-post-entry-content">
-									<?php the_excerpt(); ?>
+                                    <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_excerpt(); ?></a>
 								</section>
 
 								<footer class="article-footer cf">
@@ -95,9 +93,9 @@ $super_query = new WP_Query($args);?>
 									</p>
 
 								</header>
-
+                                <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>" class="fulllink"></a>
 								<section class="entry-content cf main-page-post-entry-content">
-									<?php the_content(); ?>
+									<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_excerpt(); ?></a>
 								</section>
 
 								<footer class="article-footer cf">
