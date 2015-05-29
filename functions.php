@@ -163,8 +163,28 @@ add_action( 'customize_register', 'bones_theme_customizer' );
 function bones_register_sidebars() {
 	register_sidebar(array(
 		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'bonestheme' ),
-		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
+		'name' => 'Sidebar commune',
+		'description' => 'Sidebar présente sur tous les apapreils',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+    
+    register_sidebar(array(
+		'id' => 'sidebar2',
+		'name' => 'Sidebar desktop',
+		'description' => 'Sidebar présente sur Desktop uniquement',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+    
+    register_sidebar(array(
+		'id' => 'sidebar3',
+		'name' => 'Sidebar mobile',
+		'description' => 'Sidebar présente sur Mobile uniquement',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
