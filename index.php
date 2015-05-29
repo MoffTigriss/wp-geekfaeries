@@ -20,7 +20,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf article-mea' ); ?> role="article" style="background-image:url(<?php echo $imageData[0]; ?>); background-repeat:no-repeat; background-position: center 2.45em;">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf main-page-posts article-mea' ); ?> role="article" style="background-image:url(<?php echo $imageData[0]; ?>); background-repeat:no-repeat; background-position: center 2.45em;">
 
 								<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><header class="article-header">
                                     <div id="cartouche-tag-date"><?php echo cartouche_event(get_the_category_list()); ?><br /><?php echo cartouche_annee(get_the_category_list()); ?></div>
@@ -36,7 +36,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 								</header></a>
 
-								<section class="entry-content cf">
+								<section class="entry-content cf main-page-post-entry-content">
 									<?php the_excerpt(); ?>
 								</section>
 
@@ -80,7 +80,7 @@ $super_query = new WP_Query($args);?>
                             
                             <?php $imageData = wp_get_attachment_image_src(get_post_thumbnail_id ( $post_ID ), 'img-article-index-1080'); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" style="background-image:url(<?php echo $imageData[0]; ?>); background-repeat:no-repeat; background-position: center 2.45em;">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf main-page-posts' ); ?> role="article" style="background-image:url(<?php echo $imageData[0]; ?>); background-repeat:no-repeat; background-position: center 2.45em;">
 
 								<header class="article-header">
                                     <div id="cartouche-tag-date"><?php echo cartouche_event(get_the_category_list()); ?><br /><?php echo cartouche_annee(get_the_category_list()); ?></div>
@@ -96,7 +96,7 @@ $super_query = new WP_Query($args);?>
 
 								</header>
 
-								<section class="entry-content cf">
+								<section class="entry-content cf main-page-post-entry-content">
 									<?php the_content(); ?>
 								</section>
 

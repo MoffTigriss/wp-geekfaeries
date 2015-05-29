@@ -14,7 +14,7 @@
                 */
               ?>
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+              <article id="post-<?php the_ID(); ?>" <?php post_class('cf post-page-article'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
 
                 <header class="article-header entry-header">
 
@@ -22,7 +22,7 @@
 
                   <p class="byline entry-meta vcard">
 
-                    <?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
+                    <?php printf('%1$s %2$s',
                        /* the time the post was published */
                        '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
                        /* the author of the post */
@@ -36,7 +36,9 @@
                 <section class="entry-content cf" itemprop="articleBody">
                   <?php
                     // the content (pretty self explanatory huh)
-                    the_content();
+                    //remove excerpt
+					$stripteaser=true;
+                    the_content('',$stripteaser);
 
                     /*
                      * Link Pages is used in case you have posts that are set to break into

@@ -162,8 +162,8 @@ CONTENT & MAIN
 *********************/
 
 #main {
-    float: left;
-    width: 805px;
+    float: center;
+    //width: 805px;
 }
 
 /*********************
@@ -187,7 +187,36 @@ POSTS & CONTENT STYLES
             //align-content: flex-start;
         }
 
-		.hentry {
+        .post-page-article {
+            //width: 805px;
+            margin-bottom: 30px;
+            //padding: 0 5px 0 5px;
+            
+            header {
+                text-align: justify;
+                font-family: $sans-serif-condensed;
+                padding: 0 5px 0 5px;
+				border: 0;
+                background-color: $gf-darker-purple;
+            }
+            
+            .entry-title {
+                //background-color: $gf-darker-purple;
+                padding: 0;
+                font-size: 2em;
+                line-height: 1.333em;
+            }
+            
+            .entry-content {
+                padding: 0 5px 0 5px;
+                background-color: $gf-dark-purple;
+                p {
+                    margin: 1em 0 1em 0;
+                }
+            }
+        }
+
+		.main-page-posts {
             @include flexbox;
             @include flex-direction(column);
             
@@ -245,7 +274,7 @@ POSTS & CONTENT STYLES
 		}
 
         /* entry content */
-		.entry-content {
+		.main-page-post-entry-content {
             background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
             padding: 0 5px 0 5px;
             line-height: 1.4em;
@@ -549,8 +578,37 @@ mobile. Make sure to double check these!
 } /* end .footer-links */
 
 /*********************
+PATCH VISUAL COMPOSER STYLES
+*********************/
+
+.wpb_row, .wpb_content_element, ul.wpb_thumbnails-fluid > li, .last_toggle_el_margin, .wpb_button {
+	margin-bottom: 1em !important;
+}
+
+.wpb_wrapper h2 {
+	line-height: 1em;
+	margin-top: -0.2em;
+}
+
+/*********************
 TEMPORARY ADDONS
 *********************/
+
+.large {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.banner img {
+	border-color: black;
+	border-style: solid;
+	border-width: 0 0 1px;
+	margin-left: -5px;
+	margin-top: -49px;
+    margin-bottom: 0;
+	width: 760px;
+	max-width: 760px;
+}
 
 #banniere-cont {
 	height: 349px;

@@ -1,6 +1,6 @@
 
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/AudioObject">
+              <article id="post-<?php the_ID(); ?>" <?php post_class('cf post-page-article'); ?> role="article" itemscope itemtype="http://schema.org/AudioObject">
 
                 <header class="article-header">
 

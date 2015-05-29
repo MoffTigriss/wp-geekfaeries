@@ -16,8 +16,31 @@ be seen on the Desktop.
 }
 
 /*********************
+CONTENT & MAIN
+*********************/
+
+#main {
+    float: left;
+    width: 805px;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.post-page-article {
+    width: 805px;
+}
+
+/*********************
 TEMPORARY ADDONS
 *********************/
+
+.banner img {
+	margin-top: -49px;
+	width: initial;
+	max-width: initial;
+}
 
 #banniere-logo {
 	position:absolute;
