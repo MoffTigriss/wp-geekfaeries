@@ -17,7 +17,14 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {}
+body {
+    background-image: url('../images/background-geekfaeries.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    //background-size: 1940px 1185px;
+}
 
 /*********************
 LAYOUT & GRID STYLES
