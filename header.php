@@ -55,7 +55,7 @@
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
-<? if ( $detect->isMobile() or $detect->isTablet() ) { echo 'MOBILE'; } else {?>
+<? if ( $detect->isMobile() or $detect->isTablet() ) { echo ''; } else {?>
                     <p id="fb" class="small-18 columns"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FGeekFaeries&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=verdana&amp;colorscheme=dark&amp;action=like&amp;height=35" style="border:none; overflow:hidden; width:450px; height:25px;padding-top: 6px;"></iframe></p>
                     <ul class="soc small-4 columns" id=social>
                         <li><a class="soc-twitter" href="https://twitter.com/GeekFaeries"></a></li>
