@@ -9,6 +9,24 @@ get_header('player'); ?>
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
+					
+					
+					
+					
+					
+					
+					
+					<video id="player" class="video-js" data-viblast-key="AnyYn3dlzJ" controls width="854" height="480" poster="MY_VIDEO_POSTER.jpg" data-setup="{}" autoplay>
+    
+        <source src="https://space.imin.space/live/out_flux1/playlist.m3u8" type='application/x-mpegURL'>
+        <!--<source src="http://88.80.185.11:8081/public/live/manifest.mpd">-->
+        
+    </video>
+					
+					
+					
+					
+					
 
 						<main id="main" class="cf fix-vierge" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
