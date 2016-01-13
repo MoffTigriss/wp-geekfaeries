@@ -6,15 +6,16 @@
 
 get_header('player'); ?>
 
-			<div id="content otw2016">
+<div id="content" class="row otw2016 otw2016-nomaxwidth">
+<!--<div id="inner-content" class="wrap cf row">-->
 
-				<!--<div id="inner-content" class="wrap cf row">-->
-					
-		<div class="row">				
-		<div class="small-24 large-4 columns">...</div>			
-					
+<div class="small-0 medium-2 large-7 columns">text côté</div>
+<div class="small-24 medium-20 large-10 columns">				
+		<div class="row">
+					<div class="small-24 columns video-js-responsive-container vjs-hd">
 
-	<video id="player" class="video-js vjs-default-skin box-glow-purple" data-viblast-key="AnyYn3dlzJ" controls width="854" height="480" poster="MY_VIDEO_POSTER.jpg" data-setup="{}" loop preload="none">
+
+						<video id="player2016" class="video-js vjs-default-skin box-glow-purple" data-viblast-key="AnyYn3dlzJ" controls poster="MY_VIDEO_POSTER.jpg" data-setup="{}" loop preload="none">
 
 						<?php if( $detect->isiOS() ){ ?>
         <source src="https://space.imin.space/live/out_flux1/playlist.m3u8" type='application/x-mpegURL'>
@@ -22,13 +23,16 @@ get_header('player'); ?>
         <source src="https://space.imin.space/live/out_flux1/manifest.mpd" type='application/dash+xml'>
 						<?php } ?>
     </video>
-					
-					
 
-					<iframe id="twitter-widget" class="box-glow-purple" src="https://www.geekfaeries.fr/twitter-widget/public/index.php" width="465" height="115" border="0" scrolling="no" allowTransparency="true"></iframe>
-					
-					
+					</div>
+					<div class="row">texte</div>
+		</div>
+		<div class="small-24 medium-6 large-7 columns" style="text-align:right;">
+			<iframe id="twitter-widget" class="box-glow-purple" src="https://www.geekfaeries.fr/twitter-widget/public/index.php" width="465" height="115" border="0" scrolling="no" allowTransparency="true"></iframe>
+		</div>
 
+	
+	
 						<main id="main" class="cf fix-vierge" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -85,6 +89,7 @@ get_header('player'); ?>
 
 						<?php //get_sidebar(); ?>
 				</div>
+	<div class="large-7 columns">text côté</div>
 				<!--</div>-->
 
 			</div>

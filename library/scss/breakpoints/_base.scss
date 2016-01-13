@@ -977,14 +977,27 @@ TEMPORARY ADDONS
 	width : 100% !important;
 }
 
-
-#otw2016 {
-	.row {
+.otw2016-nomaxwidth {
 		max-width: none !important;
-		background-color: red;
-	}
 }
 
+.video-js-responsive-container.vjs-hd {
+    padding-top: 56.25%;
+}
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+.video-js-responsive-container {
+    width: 100%;
+    position: relative;
+}
+.video-js-responsive-container .video-js {
+    height: 100% !important; 
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /* Box glow pink OTW2016 */
 .box-glow-purple {
