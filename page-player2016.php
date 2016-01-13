@@ -6,25 +6,26 @@
 
 get_header('player'); ?>
 
-			<div id="content">
+			<div id="content otw2016">
 
-				<div id="inner-content" class="wrap cf">
+				<!--<div id="inner-content" class="wrap cf row">-->
 					
+		<div class="row">				
+		<div class="small-24 large-4 columns">...</div>			
 					
-					
-					
-					
-					
-					
-					<video id="player" class="video-js" data-viblast-key="AnyYn3dlzJ" controls width="854" height="480" poster="MY_VIDEO_POSTER.jpg" data-setup="{}" autoplay>
-    
+
+	<video id="player" class="video-js vjs-default-skin box-glow-purple" data-viblast-key="AnyYn3dlzJ" controls width="854" height="480" poster="MY_VIDEO_POSTER.jpg" data-setup="{}" loop preload="none">
+
+						<?php if( $detect->isiOS() ){ ?>
         <source src="https://space.imin.space/live/out_flux1/playlist.m3u8" type='application/x-mpegURL'>
-        <!--<source src="http://88.80.185.11:8081/public/live/manifest.mpd">-->
-        
+						<?php } else { ?>
+        <source src="https://space.imin.space/live/out_flux1/manifest.mpd" type='application/dash+xml'>
+						<?php } ?>
     </video>
 					
 					
-					
+
+					<iframe id="twitter-widget" class="box-glow-purple" src="https://www.geekfaeries.fr/twitter-widget/public/index.php" width="465" height="115" border="0" scrolling="no" allowTransparency="true"></iframe>
 					
 					
 
@@ -83,8 +84,8 @@ get_header('player'); ?>
 						</main>
 
 						<?php //get_sidebar(); ?>
-
 				</div>
+				<!--</div>-->
 
 			</div>
 

@@ -34,13 +34,22 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 <?php
 		wp_register_script( 'videojs', get_stylesheet_directory_uri() . '/library/video.js/video.novtt.js', array(), '4.12.15', false );
-		wp_register_script( 'viblast', get_stylesheet_directory_uri() . '/library/viblast/viblast.js', array(), '6.11', false );
-		
 		wp_enqueue_script( 'videojs' );
+
+/* PATCH FOR CHROME DASH VIDEOJS PLAYING */
+
+if( $detect->isChrome() && $detect->isMobile() ) {
+		//wp_register_script( 'viblast', get_stylesheet_directory_uri() . '/library/viblast/viblast.js', array(), '6.11', false );
+		//wp_enqueue_script( 'viblast' );
+} else {
+		wp_register_script( 'viblast', get_stylesheet_directory_uri() . '/library/viblast/viblast.js', array(), '6.11', false );
+		wp_enqueue_script( 'viblast' );
+}
+		
 		wp_enqueue_script( 'viblast' );
 		
 		
-		wp_register_style( 'videojs-stylesheet', get_stylesheet_directory_uri() . '/library/video.js/video-js.min.css', array(), '5.5.1', 'all' );
+		wp_register_style( 'videojs-stylesheet', get_stylesheet_directory_uri() . '/library/video.js/video-js.min.css', array(), '4.12.15', 'all' );
 		
 		wp_enqueue_style( 'videojs-stylesheet' );
 ?>
