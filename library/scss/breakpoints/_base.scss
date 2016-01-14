@@ -1010,4 +1010,20 @@ TEMPORARY ADDONS
 #twitter-widget {
 	background-color: rgba(0, 0, 0, 0.3);
     border: 0;
+	display:block;
+}
+
+/* Ask-widget otw */
+#ask-widget {
+	background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+	display:block;
+}
+#articleplayer-widget {
+	background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+	
+	p:first-child {
+		margin-top: 0;
+	}
 }
