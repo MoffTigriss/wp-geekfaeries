@@ -1027,3 +1027,71 @@ TEMPORARY ADDONS
 		margin-top: 0;
 	}
 }
+
+#div-logo {
+	background-color: red;
+	/* <img id="logo-dark" src="wp-content/themes/wp-geekfaeries/library/images/Logo-dark_800_opti.png"> */
+	background-image: url(../images/Logo-dark_800_opti.png);
+	background-position: top right;
+	     padding-left: 10px;
+     margin-left: -10px;
+}
+
+#logo-dark {
+	max-width: none;
+	width: 132%;
+    margin-left: -23%;
+    margin-top: -15%;
+	position: relative;
+	z-index: -1;
+	margin-bottom: -47%;
+	margin-right: -50%;
+}
+
+#wrapper-previews{
+	background-color: rgba(0, 0, 0, 0.7);
+	margin-left: -500px;
+}
+
+#preview-videos-list{
+	margin:0;
+	
+	li {
+		text-align: right;
+		height: 60px;
+		margin-bottom: 15px;
+	}
+	
+	h1 {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 1em;
+		background-color: #503060;
+		text-align: right;
+		margin: 0;
+	}
+	p {
+		margin: 0;
+		line-height: 1.2em;
+		padding-right: 130px;
+	}
+	li p:last-child {
+		//background-color: red;
+		font-style: italic;
+		padding-right: 140px;
+	}
+	img {
+		float: right;
+		clear: right;
+		margin-left: 15px;
+		width: 107px;
+		height: 60px;
+	}
+	.secondflux {
+		
+	}
+}
+
+.vc_tta-tabs {
+	width: 100%;
+}

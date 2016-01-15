@@ -61,7 +61,7 @@ if( $detect->isChrome() && $detect->isMobile() ) {
 
 	</head>
 
-	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage" style="overflow-x: hidden;">
 
 		<div id="container">
 

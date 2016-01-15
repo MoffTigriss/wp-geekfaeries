@@ -9,13 +9,63 @@ get_header('player'); ?>
 <div id="content" class="row otw2016 otw2016-nomaxwidth">
 <!--<div id="inner-content" class="wrap cf row">-->
 
-<div class="hide-for-small-only medium-2 large-7 columns">text côté</div>
+<div class="hide-for-small-only medium-2 large-7 columns">
+	<div id="wrapper-previews" class="box-glow-purple">
+		<ul id="preview-videos-list">
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+			<li class="cf"><img src="https://placehold.it/107x60"><h1>Flux 1</h1><p>Conférence</p><p>A venir</p></li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 <div class="small-24 medium-20 large-10 columns" style="margin-bottom:15px">				
 		<div class="row">
 					<div class="small-24 columns video-js-responsive-container vjs-hd">
 
 
-						<video id="player2016" class="video-js vjs-default-skin box-glow-purple" data-viblast-key="AnyYn3dlzJ" controls poster="MY_VIDEO_POSTER.jpg" data-setup="{}" loop preload="none">
+						<video id="player2016" class="video-js vjs-default-skin box-glow-purple" data-viblast-key="AnyYn3dlzJ" controls poster="MY_VIDEO_POSTER.jpg" data-setup="{}" preload>
 
 						<?php if( $detect->isiOS() ){ ?>
         <source src="https://space.imin.space/live/out_flux1/playlist.m3u8" type='application/x-mpegURL'>
@@ -38,6 +88,9 @@ get_header('player'); ?>
 		</div>
 
 <div class="small-24 small-centered medium-20 medium-centered large-uncentered large-7 columns">
+	<!--<div id="div-logo">&nbsp;</div>-->
+	<img id="logo-dark" src="https://www.geekfaeries.fr/wp-content/themes/wp-geekfaeries/library/images/Logo-dark_800_opti.png">
+	
 		<iframe id="twitter-widget" class="box-glow-purple" src="https://www.geekfaeries.fr/twitter-widget/public/index.php" width="100%" style="//max-width: 465px;" height="115" border="0" scrolling="no" allowTransparency="true"></iframe>
 
 			<?php if( !$detect->isMobile() ){ ?>
@@ -46,7 +99,5 @@ get_header('player'); ?>
 			<?php } ?>
 	</div>
 				<!--</div>-->
-
-			
 
 <?php get_footer('player'); ?>
