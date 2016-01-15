@@ -58,7 +58,49 @@ if( $detect->isChrome() && $detect->isMobile() ) {
 		<?php // end of wordpress head ?>
 		
 		
+<script>(function($) {
 
+
+
+function getData() {
+	setTimeout(function () {
+		$.ajax({
+		  url: 'https://www.geekfaeries.fr/headbang-widget/fluxlist.json',
+		  dataType:'JSON',
+		  success:function(data){
+			$.each(data, function(key, val){
+				$("ul#preview-videos-list > li#"+val.index+" > a > h1").text(val.name);
+				$("ul#preview-videos-list > li#"+val.index+" > a> p:first").text(val.currentContent);
+				$("ul#preview-videos-list > li#"+val.index+" > a> p:last").text("A suivre : "+val.nextContent);
+				if(val.active == "0") {
+					console.log(val.active);
+					$("ul#preview-videos-list > li#"+val.index+" > div").css("background-color","orange");
+				} else {
+					$("ul#preview-videos-list > li#"+val.index+" > div").css("background-color","green");
+				};
+			});
+		  },
+		  error:function(){
+			console.log('fail');
+		  },
+		complete:getData
+		});
+
+
+	}, 1101);
+};
+
+
+	
+$(document).ready(function(){
+   getData('first');
+});
+
+
+
+})(jQuery);</script>
+		
+		
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage" style="overflow-x: hidden;">

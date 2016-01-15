@@ -1062,6 +1062,10 @@ TEMPORARY ADDONS
 		margin-bottom: 15px;
 	}
 	
+	a {
+		text-decoration: none;
+	}
+	
 	h1 {
 		font-weight: bold;
 		text-transform: uppercase;
@@ -1074,11 +1078,15 @@ TEMPORARY ADDONS
 		margin: 0;
 		line-height: 1.2em;
 		padding-right: 130px;
+		margin-top: 2px;
 	}
 	li p:last-child {
 		//background-color: red;
 		font-style: italic;
+		color: #c1c1c1;
 		padding-right: 140px;
+		font-size: 0.8em;
+		margin-top: 3px;
 	}
 	img {
 		float: right;
@@ -1086,6 +1094,16 @@ TEMPORARY ADDONS
 		margin-left: 15px;
 		width: 107px;
 		height: 60px;
+	}
+	
+	.color-indicator {
+		background-color: #503060;
+		width: 5px;
+		height: 1.333em;
+		position: absolute;
+		top: 0;
+		right: 122px;
+		z-index: 5;
 	}
 	.secondflux {
 		
